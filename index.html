@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<title>Skin Boss by Martha | Pasadena, Texas | Skin Care and More</title> 
+<meta charset="UTF-8">
+<meta name="description" content="Located in Pasadena, TX. Skin Boss by Martha is skin care and more.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="Stylesheet" href="styles.css" type="text/css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="containerbox">
+   
+    <nav class="navbar-container">
+     
+     <div class="navbar-logo"><a href="index.html"><img src="images/skinboss-logo.png" alt="Skin Boss logo" /></a></div>
+     
+ 
+     
+     <ul role="list" class="navbar-links">
+      <li><a href="services.html">SERVICES</a></li>
+       <li><a href="contact.html">CONTACT</a></li>
+       <li><a href="about.html">ABOUT</a></li>
+       
+     </ul>
+ 
+   </nav>
+<div class="test">
+<div class="heading-container">
+    <div class="heading-title">
+      <h2>The beauty of your skin<br>is important</h2>
+      <a href="contact.html"><button>CONTACT ME</button></a> 
+    </div>
+        <div class="heading-images">
+          <div><img class="heading-image1" src="images/extraction.jpg" alt="Before and after nose pores extraction." /></div>
+        <div><img class="heading-image2" src="images/lashlift.jpg" alt="Before and after a lash lift." /></div>
+        </div>
+        </div>
+</div>
+
+
+<div class="review-container">
+  
+  <div class="review-title">
+    <h3>What the beloved customers say about the services</h3>
+    <p >Customer satisfaction is a priority.</p>
+  </div>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <q>I love getting a facial monthly from here.</q>
+    <p class="author">- Adriana</p>
+  </div>
+
+  <div class="mySlides">
+    <q>My skin feels so smooth after every wax!</q>
+    <p class="author">- Jackie</p>
+  </div>
+
+  <div class="mySlides">
+    <q>Martha truly cares about the health of my skin.</q>
+    <p class="author">- Wendy</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!-- </div> -->
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+ </div>
+
+
+</div>
+
+    <footer>
+      <div class="foot">
+      <div class="social-logos">
+        <img class="fb-logo" src="images/fb.png" alt="facebook logo" />
+        <img class="instagram-logo" src="images/instagram.png" alt="instagram logo" />
+      </div>
+
+
+        
+        <div class="copyright">&#169; 2022 Skin Boss by Martha</div>
+
+      </div>
+    </footer>
+  </div>
+ 
+
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+</body>
+</html>
